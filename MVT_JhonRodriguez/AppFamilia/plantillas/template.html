@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        { 
+            background-color:  beige;
+        } 
+        
+        h1
+        {
+        
+        color: brown;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 5vh;
+        background-color: cornflowerblue;
+        border: 4px solid tomato;
+        
+        }
+        p{
+            color:white;
+            font-size: 20px;
+            text-align: center;
+            background-color: black;
+            padding: 30px;
+        }
+         
+    </style>
+</head>
+<body>
+
+    <h1> FAMILIARES REGISTRADOS </h1>
+
+    {%for i in familiares%}
+    <p> Nombre: {{i.nombre}}  -  Edad: {{i.edad}}  -  Fecha nacimiento: {{i.fecha}} </p>
+
+    {% endfor %}
+
+
+</body>
+</html>
